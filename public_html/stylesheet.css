@@ -1,0 +1,375 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*  
+    Created on : 08-12-2016, 09:58:24
+    Author     : Mushi
+*/
+/*
+*{
+    border:1px solid black;
+}
+*/
+@font-face {
+    font-family: HelveticaLtEx;
+    src: url("fonts/HelveticaNeueLTStd-LtEx.otf") format("opentype");
+}
+#header{
+    width:100%;
+    height: 14%;
+    background-color: white;  
+    float: left;
+}
+#header img {
+    width: 40%;
+}
+#logo{
+    width:auto;
+    height: 100%;
+    float:left;
+}
+#navBar{
+    margin-top: -100px;
+    width: 50%;
+    height: 50px;
+    float: right;
+}
+#navBar ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    height: 100%;
+    max-width: 100%;
+}
+#navBar ul li{
+    float:left;
+    width:20%;
+    max-height: 100%;
+}
+#navBar ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: #414bc2;
+    padding-bottom: 25%;
+    padding-top:25%;
+    font-family: HelveticaLtEx;
+    width: 100%;
+    height: 100%;
+}
+#navBar ul li a:hover{
+    background-color: white;
+    color: #414bc2;
+}
+#navBarMobile{
+    width:100%;
+    height: 50px;
+    max-height: 50px;
+}
+#navBarMobile ul{
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+}
+#navBarMobile ul li{
+    float:left;
+    width: 20%;
+    max-height: 100%;
+}
+#navBarMobile ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color:#414bc2;
+    padding-top: 25%;
+    padding-bottom: 25%;    
+    font-family: HelveticaLtEx;
+    width: 100%;
+    height: 100%;
+    
+}
+#navBarMobile ul li a:hover{
+    background-color: white;
+    color: #414bc2;
+}
+
+#preinfo{
+    width: 50%;
+    height: auto;
+    border:1px solid black;
+    margin-top: 55px;
+    margin-left: 25%;
+    min-width: 15em;
+}
+
+#portfolioButton{
+    height: auto;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+#portfolioButton a{
+    background-color: violet;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: block;
+    font-size: 20px;
+}
+#portfolio{
+    width: 100%;
+}
+.person{
+    display: inline-block;
+    width:40%;
+    margin-left: 6.5%;
+    margin-top: 25px;
+    border:1px solid black;
+    overflow:hidden;
+    min-width: 15em;
+}
+
+.package{
+    display: inline-block;
+    width: 40%;
+    margin-left: 6.5%;
+    margin-top: 25px;
+    border:1px solid black;
+    overflow:hidden;
+}
+.advice{
+    display: inline-block;
+    width: 40%;
+    margin-left: 6.5%;
+    margin-top: 25px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.person img{
+    float:left;
+}
+.personImage{
+    width:40%;
+    height:40%;
+    margin: 7px;
+}
+.top{
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+}
+.top img{
+    height: 20px;
+    width: 20px;
+}
+@media only screen and (max-width: 320px)
+{
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    #preinfo{
+        min-width: 75%;
+        margin-left: 12.5%;
+    }
+    .person{
+        min-width:75%;
+        margin-left: 12.5%;
+    }
+    .package{
+        min-width:75%;
+        margin-left: 12.5%;
+    }
+    .advice{
+        min-width: 75%;
+        margin-left: 12.5%;
+    }
+    #navBar{
+        display:none;
+    }
+    #navBarMobile ul li a{
+        font-size: 11px;
+    }
+}
+@media only screen and (min-width: 320px)
+{
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    #preinfo{
+        min-width: 75%;
+        margin-left: 12.5%;
+    }
+    .person{
+        min-width:75%;
+        margin-left: 12.5%;
+    }
+    .package{
+        min-width:75%;
+        margin-left: 12.5%;
+    }
+    .advice{
+        min-width: 75%;
+        margin-left: 12.5%;
+    }
+    #navBar{
+        display:none;
+    }
+    #navBarMobile ul li a{
+        font-size: 11px;
+    }
+}
+@media only screen and (min-width: 480px)
+{
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    #preinfo{
+        min-width: 75%;
+        margin-left: 12.5%;
+    }
+    .person{
+        min-width: 75%;
+        margin-left: 12.5%;
+    }
+    .package{
+        min-width: 75%;
+        margin-left: 12.5%;
+    }
+    .advice{
+        min-width: 75%;
+        margin-left: 12.5%;
+    }
+    #navBar{
+        display:none;
+    }
+    
+    #navBarMobile ul li a{
+        padding-bottom: 25%;
+        padding-top: 25%;
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 768px)
+{
+    #navBar{
+        display:none;
+    }
+    #navBarMobile ul li a{
+        padding-bottom: 17%;
+        padding-top: 17%;
+        font-size: 16px;
+    }
+    .person{
+    display: inline-block;
+    width:40%;
+    margin-left: 6.5%;
+    margin-top: 25px;
+    border:1px solid black;
+    overflow:hidden;
+    min-width: 15em;
+}
+
+.package{
+    display: inline-block;
+    width: 40%;
+    margin-left: 6.5%;
+    margin-top: 25px;
+    border:1px solid black;
+    overflow:hidden;
+}
+.advice{
+    display: inline-block;
+    width: 40%;
+    margin-left: 6.5%;
+    margin-top: 25px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+}
+@media only screen and (min-width: 1024px)
+{
+    #navBar{
+        display:block;
+    }
+    #navBarMobile{
+        display:none;
+    }
+    .person{
+    display: inline-block;
+    width:40%;
+    margin-left: 6.5%;
+    margin-top: 25px;
+    border:1px solid black;
+    overflow:hidden;
+    min-width: 15em;
+}
+
+.package{
+    display: inline-block;
+    width: 40%;
+    margin-left: 6.5%;
+    margin-top: 25px;
+    border:1px solid black;
+    overflow:hidden;
+    min-width: 15em;
+}
+.advice{
+    display: inline-block;
+    width: 40%;
+    margin-left: 6.5%;
+    margin-top: 25px;
+    border: 1px solid black;
+    overflow: hidden;
+    min-width: 15em;
+}
+}
+@media only screen and (min-width: 1280px)
+{
+    #navBar{
+        display:block;
+    }
+    #navBarMobile{
+        display:none
+    }
+    .person{
+    display: inline-block;
+    width:40%;
+    margin-left: 6.5%;
+    margin-top: 25px;
+    border:1px solid black;
+    overflow:hidden;
+    min-width: 15em;
+}
+
+.package{
+    display: inline-block;
+    width: 40%;
+    margin-left: 6.5%;
+    margin-top: 25px;
+    border:1px solid black;
+    overflow:hidden;
+    min-width: 15em;
+}
+.advice{
+    display: inline-block;
+    width: 40%;
+    margin-left: 6.5%;
+    margin-top: 25px;
+    border: 1px solid black;
+    overflow: hidden;
+    min-width: 15em;
+}
+}
+
+
+
