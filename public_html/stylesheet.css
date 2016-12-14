@@ -177,6 +177,9 @@ and open the template in the editor.
     height: 20px;
     width: 20px;
 }
+.clear {
+    clear: both;
+}
 @media only screen and (max-width: 320px)
 {
     body{
